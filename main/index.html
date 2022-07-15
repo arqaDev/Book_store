@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="App.js" defer></script>
+    <script src="https://kit.fontawesome.com/02436f5c0c.js" crossorigin="anonymous"></script>
+    <title>Bookstore App</title>
+</head>
+<body>
+    <header>
+
+        <!-- navigation -->
+        <nav>
+            <div class="logo">
+                <h1><a href="#" id="logo">BookStore</a></h1>
+            </div>
+
+            <!-- search form -->
+            <form id="nav-form" method="get" onsubmit="event.preventDefault()">
+                <span>
+                    <input id="search_term" type="text" autocomplete="off" maxlength="100" placeholder="Find your book">
+                </span>       
+                <button id="search" type="submit" form="search"><i class="fa-solid fa-magnifying-glass" style="padding-right: 10px;"></i><span>Search</span></button>    
+            </form>
+            <div class="info">
+                <ul>
+                    <li class="wish_list">
+                        <a href="../wish_list/wish_list.html"><i class="fa-solid fa-heart"></i></a>
+                        <div class="wish_list_counter" id="wish_list_counter">
+                            <span></span>
+                        </div>
+                    </li>
+                    <li class="cart">
+                        <a href="../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <div class="cart_counter" id="cart_counter">
+                            <span></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- section with books and modal window with info -->
+    <section class="container">
+
+        <!-- books -->
+        <div class="books">
+        </div>
+
+        <!-- modal window -->
+        <div class="popup-container hidden" id="book-popup">
+            <div class="popup">
+                <div class="book-info" id="book-info">
+                </div>
+                <i class="fa-solid fa-xmark close" id="close"></i>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
