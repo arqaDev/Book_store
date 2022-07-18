@@ -2,7 +2,9 @@
 
 :root {
     --nav-color-hover: #f8f5f5;
-    --nav-links: #fff;
+    --color-white: #fff;
+    --color-main: #ffb960;
+    --color-grey: #9c9c9c;
 }
 
 * {
@@ -19,14 +21,14 @@ body {
 nav {
     display: flex;
     width: 100%;
-    background-color: #ffb960;
+    background-color: var(--color-main);
     padding: 2% 10%;
     justify-content: space-between;
 }
 
 nav #logo {
     font-size: 2rem;
-    color: var(--nav-links);
+    color: var(--color-white);
     text-decoration: none;
 }
 
@@ -67,7 +69,7 @@ nav form button{
     background-color: transparent;
     border: none;
     font-size: 1.2rem;
-    color: grey;
+    color: var(--color-grey);
     cursor: pointer;
     height: 100%;
     width: 100px;
@@ -83,7 +85,7 @@ nav .info ul li{
 
 nav .info ul a {
     font-size: 2rem;
-    color: var(--nav-links)
+    color: var(--color-white)
 }
 
 nav .info ul a:hover {
@@ -95,7 +97,7 @@ nav .wish_list_counter, nav .cart_counter {
     top: 0;
     right: -12px;
     background-color: rgb(235, 73, 73);
-    color: #fff;
+    color: var(--color-white);
     border-radius: 50%;
     min-width: 19px;
     font-size: 12px;
@@ -121,7 +123,7 @@ nav .wish_list_counter, nav .cart_counter {
 .book {
     height: 488px;
     width: 258px;
-    background-color: #fff;
+    background-color: var(--color-white);
     padding: 15px 18px;
     border: 1px solid rgb(62, 62, 62);
     border-radius: 7px;
@@ -164,7 +166,7 @@ nav .wish_list_counter, nav .cart_counter {
     color: black;
 }
 .book__title a:hover{
-    color: #ffb960;
+    color: var(--color-main);
 }
 
 .book__author {
@@ -172,7 +174,7 @@ nav .wish_list_counter, nav .cart_counter {
     height: 19px;
     font-size: 1rem;
     overflow: hidden;
-    color: #9c9c9c;
+    color: var(--color-grey);
 }
 
 .book__order {
@@ -192,10 +194,10 @@ nav .wish_list_counter, nav .cart_counter {
     width: 87px;
     font-size: 1rem;
     border: none;
-    background-color: #ffb960;
+    background-color: var(--color-main);
     border-radius: 0.125rem;
     cursor: pointer;
-    color: #fff;
+    color: var(--color-white);
     font-weight: bold;
 }
 
@@ -215,7 +217,7 @@ nav .wish_list_counter, nav .cart_counter {
     margin-right: 4px;
     font-size: 1.5rem;
     border: none;
-    color: #9c9c9c;
+    color: var(--color-grey);
     background-color: transparent;
     cursor: pointer;
 }
@@ -243,7 +245,7 @@ nav .wish_list_counter, nav .cart_counter {
 }
 
 .popup {
-    background-color: #fff;
+    background-color: var(--color-white);
     max-width: 500px;
     height: 700px;
     max-height: 100vh;
@@ -299,7 +301,7 @@ nav .wish_list_counter, nav .cart_counter {
     position: absolute;
     right: 20px;
     top: 20px;
-    color: white;
+    color: var(--color-white);
     font-size: 50px;
     cursor: pointer;
 }
@@ -307,7 +309,7 @@ nav .wish_list_counter, nav .cart_counter {
 .wishList__book {
     height: 170px;
     width: 80%;
-    background-color: #fff;
+    background-color: var(--color-white);
     padding: 15px 18px;
     box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -351,14 +353,14 @@ nav .wish_list_counter, nav .cart_counter {
     color: black;
 }
 .wishList__book__title a:hover{
-    color: #ffb960;
+    color: var(--color-main);
 }
 
 .wishList__book__author {
     margin-top: 7px;
     height: 19px;
     overflow: hidden;
-    color: #9c9c9c;
+    color: var(--color-grey);
     font-size: 0.9rem;
 }
 
@@ -390,7 +392,7 @@ nav .wish_list_counter, nav .cart_counter {
 .cart__book {
     height: 170px;
     width: 80%;
-    background-color: #fff;
+    background-color: var(--color-white);
     padding: 15px 18px;
     box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -432,14 +434,14 @@ nav .wish_list_counter, nav .cart_counter {
     color: black;
 }
 .cart__book__title a:hover{
-    color: #ffb960;
+    color: var(--color-main);
 }
 
 .cart__book__author {
     margin-top: 7px;
     height: 19px;
     overflow: hidden;
-    color: #9c9c9c;
+    color: var(--color-grey);
 }
 
 .cart__book__counter {
@@ -474,7 +476,7 @@ nav .wish_list_counter, nav .cart_counter {
 
 .cart__book__counter .minus:hover, .cart__book__counter .plus:hover{
     background-color: #3c72bf;
-    color: white;
+    color: var(--color-white);
 }
 
 .cart__book__counter .minus:active, .cart__book__counter .plus:active {
